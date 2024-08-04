@@ -155,7 +155,7 @@
             veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
             consequatur?</p>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <style>
+   <style>
         body {
             margin: 0;
             font-family: Georgia, 'Times New Roman', Times, serif;
@@ -168,6 +168,12 @@
         }
         h1, h2 {
             font-family: 'Lora', Georgia, serif;
+        }
+        .scrolly {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .map-container {
             position: sticky;
@@ -193,13 +199,17 @@
             height: 100%;
             border: none;
         }
+        .steps-container {
+            position: relative;
+            z-index: 1;
+        }
         .step {
             margin: 0 auto 80vh;
             padding: 1rem;
             background: rgba(255, 255, 255, 0.8);
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 4px;
-            max-width: 600px;
+            max-width: 400px;
         }
         .step.active {
             background: rgba(255, 251, 175, 0.9);
@@ -212,30 +222,31 @@
         <p>Scroll down to explore the minimum wage situation across different states in the US.</p>
     </div>
 
-    <div class="map-container">
-        <div id="map1" class="map">
-            <iframe title="States Below Federal Minimum Wage" aria-label="Map" id="datawrapper-chart-XzxtX" src="https://datawrapper.dwcdn.net/XzxtX/1/" scrolling="no" style="width: 100%; height: 100%;" data-external="1"></iframe>
+    <div class="scrolly">
+        <div class="map-container">
+            <div id="map1" class="map">
+                <iframe title="States Below Federal Minimum Wage" aria-label="Map" id="datawrapper-chart-XzxtX" src="https://datawrapper.dwcdn.net/XzxtX/1/" scrolling="no" style="width: 100%; height: 100%;" data-external="1"></iframe>
+            </div>
+            <div id="map2" class="map">
+                <iframe title="States At or Below Federal Minimum Wage" aria-label="Map" id="datawrapper-chart-Gfmcl" src="https://datawrapper.dwcdn.net/Gfmcl/1/" scrolling="no" style="width: 100%; height: 100%;" data-external="1"></iframe>
+            </div>
+            <div id="map3" class="map">
+                <iframe title="State Minimum Wage Comparison Across the Nation" aria-label="Map" id="datawrapper-chart-SsiWt" src="https://datawrapper.dwcdn.net/SsiWt/3/" scrolling="no" style="width: 100%; height: 100%;" data-external="1"></iframe>
+            </div>
         </div>
-        <div id="map2" class="map">
-            <iframe title="States At or Below Federal Minimum Wage" aria-label="Map" id="datawrapper-chart-Gfmcl" src="https://datawrapper.dwcdn.net/Gfmcl/1/" scrolling="no" style="width: 100%; height: 100%;" data-external="1"></iframe>
-        </div>
-        <div id="map3" class="map">
-            <iframe title="State Minimum Wage Comparison Across the Nation" aria-label="Map" id="datawrapper-chart-SsiWt" src="https://datawrapper.dwcdn.net/SsiWt/3/" scrolling="no" style="width: 100%; height: 100%;" data-external="1"></iframe>
-        </div>
-    </div>
-
-    <div class="content">
-        <div class="step" data-step="1">
-            <h2>States Below Federal Minimum Wage</h2>
-            <p>This map shows states with a minimum wage below the federal level of $7.25 per hour.</p>
-        </div>
-        <div class="step" data-step="2">
-            <h2>States At or Below Federal Minimum Wage</h2>
-            <p>Here we see both states below and at the federal minimum wage of $7.25 per hour.</p>
-        </div>
-        <div class="step" data-step="3">
-            <h2>All States' Minimum Wage Comparison</h2>
-            <p>This map compares all states, highlighting those below, at, and above the federal minimum wage.</p>
+        <div class="steps-container">
+            <div class="step" data-step="1">
+                <h2>States Below Federal Minimum Wage</h2>
+                <p>This map shows states with a minimum wage below the federal level of $7.25 per hour.</p>
+            </div>
+            <div class="step" data-step="2">
+                <h2>States At or Below Federal Minimum Wage</h2>
+                <p>Here we see both states below and at the federal minimum wage of $7.25 per hour.</p>
+            </div>
+            <div class="step" data-step="3">
+                <h2>All States' Minimum Wage Comparison</h2>
+                <p>This map compares all states, highlighting those below, at, and above the federal minimum wage.</p>
+            </div>
         </div>
     </div>
 
