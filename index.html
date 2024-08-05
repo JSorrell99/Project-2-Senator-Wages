@@ -303,12 +303,11 @@
                     for (var i = 0; i < iframes.length; i++) {
                         if (iframes[i].contentWindow === event.source) {
                             iframes[i].style.height = event.data['datawrapper-height'][chartId] + 'px';
-                        }
+                                 }
                     }
-                }
-            }
-        });
-    </script>
+                })
+            }();
+        </script>
     </div>
     <ul>
             <li>One thing</li>
