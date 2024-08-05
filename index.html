@@ -251,8 +251,8 @@
     <div class="steps-container">
         <div class="steps-container">
     <div class="step" data-step="1">
-        <h2>New Map Title</h2>
-        <p>Description for the new map goes here.</p>
+       // <h2>New Map Title</h2>
+       // <p>Description for the new map goes here.</p>
     </div>
     <div class="step" data-step="2">
         <h2>States <span style="color: #ffa600; font-weight: bold;">Below</span> Federal Minimum Wage</h2>
@@ -277,11 +277,11 @@
         function handleStepEnter(response) {
             const { element, index, direction } = response;
             
-            // Update steps
+            // steps
             document.querySelectorAll('.step').forEach(el => el.classList.remove('active'));
             element.classList.add('active');
             
-            // Update maps
+            //  maps
             document.querySelectorAll('.map').forEach(el => el.classList.remove('active'));
             document.querySelector(`#map${index + 1}`).classList.add('active');
         }
