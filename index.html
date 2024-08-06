@@ -213,6 +213,7 @@
         .steps-container {
             position: relative;
             z-index: 1;
+            margin-bottom: -80vh; /* Removes extra space after the last step */
         }
         .step {
             margin: 0 auto 80vh;
@@ -224,6 +225,10 @@
         }
         .step.active {
             background: rgba(255, 255, 255, 0.9);
+        }
+        .step:first-child {
+            opacity: 0;
+            pointer-events: none;
         }
     </style>
 </head>
