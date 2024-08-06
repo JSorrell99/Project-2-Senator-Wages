@@ -230,6 +230,17 @@
             opacity: 0;
             pointer-events: none;
         }
+        .steps-container {
+            margin-bottom: 0; /* Changed from -80vh to 0 */
+        }
+        .step {
+            margin: 0 auto 50vh; /* Changed from 80vh to 50vh */
+            /* ... (other step styles remain the same) ... */
+        }
+        .step:last-child {
+            margin-bottom: 90vh; /* Add extra space after the last step */
+        }
+       
     </style>
 </head>
 <body>
