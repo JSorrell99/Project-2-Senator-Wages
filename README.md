@@ -32,3 +32,5 @@ This project aimed to analyze and visualize the growing disparity between U.S. S
 - Develop an interactive tool allowing users to input their state and job type to see personalized wage comparisons.
 - Conduct a more in-depth analysis of the economic impact of minimum wage increases on different sectors.
 - **Compare States at Minimum Wage or Lower to Poverty Levels and Education Levels**: Analyze how states with minimum wage laws (or lack thereof) correlate with poverty rates and education attainment levels. This would involve gathering data on poverty rates and education levels from sources such as the U.S. Census Bureau and Department of Education, then visualizing and statistically analyzing these relationships.
+
+  ### You can view the project here: https://jsorrell99.github.io/Project-2-Senator-Wages/
