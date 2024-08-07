@@ -1,4 +1,4 @@
-# Minimum Wage Freeze: Senators Prosper, Minimum Wage Workers Struggle
+# Minimum wage freeze: Senators prosper, minimum wage workers struggle
 
 ## Project Aim
 This project aimed to analyze and visualize the growing disparity between U.S. Senators' salaries and the federal minimum wage over the past century. We sought to highlight the economic inequalities and spark discussion about fair compensation in America.
